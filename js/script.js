@@ -32,7 +32,7 @@ function showItems() {
         UI += `
         <li>
             <p>${item}</p>
-            <button onclick="deleteItem(${index})">Detele</button>
+            <button onclick="deleteItem(${index})">Done</button>
         </li>
         `
     })

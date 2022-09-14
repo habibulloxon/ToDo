@@ -14,12 +14,16 @@
     <header class="header">
         <div class="container header__container">
             <h1 class="visually-hidden">ToDo list</h1>
-
-            <a href="/" class="header__logo-link">
-                <img src="img/" alt="logo" class="header__logo-img">
-            </a>
-            <input type="text" id="header__input" placeholder="Type your task..." autofocus autocomplete="off">
-            <button id="header__add-btn">Add</button>
+            <div class="header__wrapper">
+                <a href="/" class="header__logo-link">
+                    <img src="img/logo.svg" alt="logo" class="header__logo-img">
+                </a>
+                <div class="header__input-wrapper">
+                    <input type="text" id="header__input" placeholder="Type your task..." autofocus autocomplete="off">
+                    <!-- <button id="header__add-btn">Add</button> -->
+                    <input type="button" id="header__add-btn" value="Add">
+                </div>
+            </div>
             <ul id="header__list"></ul>
         </div>
     </header>

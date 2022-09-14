@@ -1,6 +1,17 @@
 .container{
     width: 1360px;
-    padding: 0 15px;
+    padding: 15px 15px;
     margin: 0 auto;
-    border: 1px solid;
+}
+@media only screen and (max-width: $tablet){
+    .container{
+        width: 683px;
+        border: 1px solid transparent;
+    }
+}
+@media only screen and (max-width: $mobile){
+    .container{
+        width: 327px;
+        border: 1px solid transparent;
+    }
 }
