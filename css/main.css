@@ -343,6 +343,7 @@ body {
 li {
   display: flex;
   font-size: 2rem;
+  justify-content: space-between;
   flex-direction: row;
   align-items: center;
   margin-bottom: 30px;
