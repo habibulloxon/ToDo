@@ -51,6 +51,29 @@ p{
     color: #fff;
     padding: 10px 40px;
 }
+.header__item{
+    display: flex;
+    font-size: 2rem; 
+    flex-direction: row;
+    align-items: center; 
+    margin-bottom: 30px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.btn{
+    font-size: 16px;
+    display: inline-block;
+    cursor: pointer;
+    background: linear-gradient(90.35deg, #2563EB 0.36%, #D946EF 201.02%);
+    opacity: 0.9;
+    border-radius: 70px;
+    border: none;
+    color: #fff;
+    padding: 7px 20px;
+    margin-left: 12px;
+}
+
 @media only screen and (max-width: $tablet){
     .header__container{
         display: flex;
@@ -73,6 +96,9 @@ p{
     }
 }
 @media only screen and (max-width: $mobile){
+    .header__item{
+        font-size: 1.5rem;
+    }
     .header__wrapper{
         flex-direction: column;
     }
@@ -98,6 +124,6 @@ p{
     }
     #header__list{
         margin: 0;
-        margin-top: 20px;
+        margin-top: 40px;
     }
 }

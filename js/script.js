@@ -30,9 +30,9 @@ function showItems() {
     let taskShow = document.getElementById("header__list")
     taskList.map((item, index)=> {
         UI += `
-        <li>
-            <p>${item}</p>
-            <button onclick="deleteItem(${index})">Done</button>
+        <li class="header__item">
+            <p class="item__text">${item}</p>
+            <button class="btn" onclick="deleteItem(${index})">Done</button>
         </li>
         `
     })
