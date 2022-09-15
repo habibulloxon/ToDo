@@ -1,9 +1,9 @@
-const form = document.querySelector("header__input-wrapper")
+// const form = document.querySelector("header__input-wrapper")
 const input = document.getElementById("header__input")
 const addButton = document.getElementById("header__add-btn")
+// const delBtn = document.getElementById("btn")
 
 addButton.addEventListener("click", function () {
-
     if(input.value.trim() != 0){
         let localItems = 
         JSON.parse(localStorage.getItem('localItem'))
@@ -65,3 +65,7 @@ function deleteItem(index) {
     window.location.reload()
 }
 // localStorage.clear()
+
+navigator.getBattery().then(bat => {
+    bat.onchargingchange = () => alert("change")
+})
