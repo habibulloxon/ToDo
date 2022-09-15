@@ -1,3 +1,4 @@
+const form = document.querySelector("header__input-wrapper")
 const input = document.getElementById("header__input")
 const addButton = document.getElementById("header__add-btn")
 
@@ -18,6 +19,24 @@ addButton.addEventListener("click", function () {
     input.value = ""
     showItems()
 })
+
+// form.addEventListener("submit", function (e) {
+//     e.preventDefault()
+//     if(input.value.trim() != 0){
+//         let localItems = 
+//         JSON.parse(localStorage.getItem('localItem'))
+
+//         if (localItems === null) {
+//             taskList = []
+//         } else{
+//             taskList = localItems
+//         }
+//         taskList.push(input.value)
+//         localStorage.setItem('localItem', JSON.stringify(taskList))
+//     }
+//     input.value = ""
+//     showItems()
+// })
 
 function showItems() {
     let localItems = JSON.parse(localStorage.getItem('localItem'))
