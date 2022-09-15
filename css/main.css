@@ -379,7 +379,7 @@ button {
 }
 @media only screen and (max-width: 713px) {
   .container {
-    width: 327px;
+    width: 350px;
     border: 1px solid transparent;
   }
 }
